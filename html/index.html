@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML Cheat Sheet</title>
+  </head>
+  <body>
+    <a href="blog.html">Go to blog </a>
+    <hr />
+    <!-- Quotations -->
+    <blockquote cite="https://oleggolubs.com">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+      doloremque est dolorem dolore nemo maxime vitae repellendus! Ullam iste
+      corrupti a harum voluptatibus illum possimus delectus odio nostrum.
+      Placeat, amet ratione consequatur ipsam aut magnam consequuntur cumque!
+      Temporibus quidem in aliquid eum omnis laborum alias voluptate provident
+      repellat tempore odio optio nemo sit porro et ratione excepturi
+      perferendis, debitis nihil neque saepe delectus voluptas amet? Nam quas
+      repudiandae et illum aliquid ea quaerat! Magnam excepturi aliquid, odit
+      doloremque consequuntur accusamus aliquam? Illum unde, totam corporis qui
+      temporibus, ex quam soluta nulla facilis inventore perferendis ipsa
+      aliquam sequi consequatur eos voluptatem.
+    </blockquote>
+
+    <p>The <abbr title="World Wide Web">WWW</abbr> is awesome</p>
+
+    <p><cite>HTML Cheatsheet</cite> by Oleg Golubs</p>
+    <!-- Cite tag is semantic to tell the browser that something is being cited, default style is italic -->
+
+    <!-- Image -->
+    <a href="../img/sample-img.jpg">
+      <img src="../img/sample-img.jpg" alt="Sample image" width="200" />
+    </a>
+    <br />
+    <br />
+
+    <!-- Button (outside a form) -->
+    <button>Click me</button>
+    <br />
+    <br />
+
+    <!-- Forms -->
+    <form action="process.php" method="POST">
+      <div>
+        <label>First Name</label>
+        <input type="text" name="firstName" value="Enter first name" />
+      </div>
+      <br />
+      <div>
+        <label>Last Name</label>
+        <input type="text" name="lastName" placeholder="Enter first name" />
+      </div>
+      <br />
+      <div>
+        <label>Email</label>
+        <input type="email" name="email" />
+      </div>
+      <br />
+      <div>
+        <label>Message</label>
+        <textarea name="message"></textarea>
+      </div>
+      <br />
+      <div>
+        <label>Gender</label>
+        <select name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label>Age</label>
+        <input type="number" name="age" value="30" />
+      </div>
+      <br />
+      <div>
+        <label>Birthday</label>
+        <input type="date" name="birthday" />
+      </div>
+      <br />
+      <div>
+        <input type="submit" name="submit" value="Submit" />
+        <!-- Submits to process.php (action of the form) -->
+      </div>
+    </form>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Oleg Golubs</td>
+          <td>oleg@something.com</td>
+          <td>32</td>
+        </tr>
+        <tr>
+          <td>John Doe</td>
+          <td>john@something.com</td>
+          <td>42</td>
+        </tr>
+        <tr>
+          <td>Max Muster</td>
+          <td>mx@something.com</td>
+          <td>22</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Lists -->
+    <ul>
+      <li>List Item 1</li>
+      <li>List Item 2</li>
+      <li>List Item 3</li>
+      <li>List Item 4</li>
+    </ul>
+
+    <ol>
+      <li>List Item 1</li>
+      <li>List Item 2</li>
+      <li>List Item 3</li>
+      <li>List Item 4</li>
+    </ol>
+
+    <!-- Paragraph -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident
+      iste adipisci dolorum optio asperiores labore, quae, illo magni id maxime
+      unde hic in quod mollitia molestias laudantium, eaque ex? Lorem, ipsum
+      dolor sit <strong>amet consectetur adipisicing </strong> elit. Distinctio
+      eligendi vel error omnis nulla nam, libero ad dolor quo vero aut, expedita
+      accusamus quaerat voluptate enim quod recusandae! Esse, autem animi vero
+      laborum cum nesciunt. Placeat
+      <em>voluptate aut autem nobis</em> doloremque corporis, unde sapiente quas
+      esse velit culpa tenetur quidem voluptatum dicta. Repudiandae magni hic,
+      explicabo consectetur dolor rerum repellat provident, ipsam repellendus
+      tempora fuga expedita
+      <a href="" target="_blank">ratione obcaecati itaque</a> sapiente quisquam
+      incidunt cumque? Ipsam asperiores culpa laboriosam dolores autem nam
+      cupiditate, expedita temporibus! Nam alias inventore aliquam et iste nihil
+      tempore itaque consectetur nisi expedita aut nemo, quae sed ut?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident
+      iste adipisci dolorum optio asperiores labore, quae, illo magni id maxime
+      unde hic in quod mollitia molestias laudantium, eaque ex? Lorem, ipsum
+      dolor sit amet consectetur adipisicing elit. Distinctio eligendi vel error
+      omnis nulla nam, libero ad dolor quo vero aut, expedita accusamus quaerat
+      voluptate enim quod recusandae! Esse, autem animi vero laborum cum
+      nesciunt. Placeat voluptate aut autem nobis doloremque corporis, unde
+      sapiente quas esse velit culpa tenetur quidem voluptatum dicta.
+      Repudiandae magni hic, explicabo consectetur dolor rerum repellat
+      provident, ipsam repellendus tempora fuga expedita ratione obcaecati
+      itaque sapiente quisquam incidunt cumque? Ipsam asperiores culpa
+      laboriosam dolores autem nam cupiditate, expedita temporibus! Nam alias
+      inventore aliquam et iste nihil tempore itaque consectetur nisi expedita
+      aut nemo, quae sed ut?
+    </p>
+
+    <h1>Heading One</h1>
+    <h2>Heading Two</h2>
+    <h3>Heading Three</h3>
+    <h4>Heading Four</h4>
+    <h5>Heading Five</h5>
+    <h6>Heading Six</h6>
+  </body>
+</html>
