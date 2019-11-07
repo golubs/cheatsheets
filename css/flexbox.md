@@ -1,7 +1,9 @@
-Flexbox
+# Flexbox
 
-FLEXBOX:
-Justify-content:
+![Flexbox Model](../img/css-flexbox-model.png)
+
+**Flexbox Properties**
+![Flexbox Properties](../img/css-flexbox-properties.png)
 
 - flex-start: Items align to the left side of the container.
 - flex-end: Items align to the right side of the container.

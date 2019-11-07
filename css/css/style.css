@@ -1,0 +1,226 @@
+/* This is called a reset, * selects everything  
+* {
+  margin: 0;
+  padding: 0;
+}
+*/
+
+body {
+  background-color: #f4f4f4;
+  color: #555555;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  /* Same as above */
+  font: normal 16px Arial, Helvetica, sans-serif;
+
+  line-height: 1.6em;
+  margin: 0;
+}
+
+/* Global styles for links */
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* 
+a:visited {
+  color: black;
+} 
+*/
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: green;
+}
+
+.container {
+  /* width: 960px; popular width on websites */
+  width: 80%; /* makes the website responsive */
+  margin: auto; /* puts even amount of margin on the left and right  sides  */
+}
+
+.button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+}
+
+.clr {
+  clear: both;
+}
+
+.button:hover {
+  background-color: red;
+  color: white;
+}
+
+.box-1 {
+  background-color: #333; /* S hortcut  */
+  color: #fff; /* White */
+
+  border-right: 5px red solid;
+  border-left: 5px red solid;
+  border-top: 5px red solid;
+  border-bottom: 5px red solid;
+  /* Same as above  */
+  border: 5px red solid;
+  border-width: 3px;
+  border-bottom-width: 10px;
+  border-top-style: dotted; /* solid, dotted, dashed, double */
+
+  border: 5px red solid;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  /* Same as above */
+  padding: 20px;
+
+  margin: 20px 0; /* top-bottom: 20px right-left: 0px */
+}
+
+.box-1 h1 {
+  font-family: Tahoma;
+  font-weight: 800;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  word-spacing: 1em;
+}
+
+.box-2 {
+  border: 3px dotted #ccc;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.categories {
+  border: 1px #ccc solid;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.categories h2 {
+  text-align: center;
+}
+
+.categories ul {
+  padding: 0; /* ul has about 40px padding by default */
+  padding-left: 20px;
+  list-style: square; /* different bullet-points, can also be done one the li */
+  list-style: none; /* no bullet-points */
+}
+
+.categories li {
+  padding-bottom: 6px;
+  border-bottom: dotted 1px #333;
+  list-style-image: url("../../img/check.png");
+}
+
+.my-form {
+  padding: 20px;
+}
+
+.my-form .form-group {
+  padding-bottom: 15px;
+}
+
+.my-form label {
+  display: block;
+}
+
+.my-form input[type="text"],
+.my-form textarea {
+  padding: 8px;
+  width: 100%;
+}
+
+/* Used class .button instead
+.my-form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+} */
+
+/* Flexbox does this better, but this also works */
+.block {
+  float: left;
+  width: 33.3%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box; /* Takes padding and boarder and applies it to width, so it doesn't become too wide by just adding on top */
+}
+
+#main-block {
+  float: left;
+  width: 70%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+#sidebar {
+  float: right;
+  width: 30%;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Position is static by default */
+.p-box {
+  width: 800px;
+  height: 500px;
+  border: 1px solid #000;
+  margin-top: 30px;
+  position: relative;
+  background-image: url("../../img/bgimage.jpg");
+  background-repeat: no-repeat; /* Doesn't repeat the image while moving, etc. */
+  background-position: 100px 200px; /* Pushes the image over 100px and down 200px */
+  background-position: center center; /* Center background horizontally and vertically, you can use "top", px or % */
+  background-size: cover; /* Or 100% 100% (also good in this case) or contain */
+}
+
+.p-box h1 {
+  position: absolute; /* Inside relative element .p-box */
+  top: 180px;
+  left: 200px;
+}
+
+.p-box h2 {
+  position: absolute;
+  bottom: 40px;
+  right: 100px;
+}
+
+.fix-me {
+  position: fixed;
+  top: 400px;
+}
+
+.my-list li:first-child {
+  background: red; /* If you use background instead of background-color, you can either specify a color or an image */
+}
+
+.my-list li:last-child {
+  background: blue;
+}
+
+.my-list li:nth-child(5) {
+  background: yellow;
+}
+
+/* Very helpful, especially if this HTML is dynamically generated and you can't really target a specific list item */
+.my-list li:nth-child(even) {
+  background: grey;
+}
